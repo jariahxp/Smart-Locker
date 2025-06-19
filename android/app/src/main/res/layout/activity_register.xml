@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_login"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textStyle="bold"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center"
+            android:textColor="@color/Primary"
+            android:textSize="34sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            >
+            <com.cleon.lokerku.awan.helper.customview.EmailCustomView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan email Anda"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="18dp"
+                android:textSize="18sp"
+                android:autofillHints=""
+                android:textColor="@color/Primary"
+                android:textColorHint="@color/Primary"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            app:passwordToggleEnabled="true"
+            android:background="@drawable/edit_text_rounded_corner"
+            >
+            <com.cleon.lokerku.awan.helper.customview.EmailCustomView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan password Anda"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="18dp"
+                android:textSize="18sp"
+                android:autofillHints=""
+                android:textColor="@color/Primary"
+                android:textColorHint="@color/Primary"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_login_konfirmasi_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            app:passwordToggleEnabled="true"
+            android:background="@drawable/edit_text_rounded_corner"
+            >
+            <com.cleon.lokerku.awan.helper.customview.EmailCustomView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Konfirmasi password Anda"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="18dp"
+                android:textSize="18sp"
+                android:autofillHints=""
+                android:textColor="@color/Primary"
+                android:textColorHint="@color/Primary"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            >
+            <com.cleon.lokerku.awan.helper.customview.EmailCustomView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan username Anda"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="18dp"
+                android:textSize="18sp"
+                android:autofillHints=""
+                android:textColor="@color/Primary"
+                android:textColorHint="@color/Primary"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/Primary"
+            android:text="Login"/>
+        <LinearLayout
+            android:id="@+id/layoutTextRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah mempunyai akun?"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tvToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/Primary"
+                android:text="login sekarang"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

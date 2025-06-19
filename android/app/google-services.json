@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "189133644764",
+    "firebase_url": "https://loker-1ccc1-default-rtdb.firebaseio.com",
+    "project_id": "loker-1ccc1",
+    "storage_bucket": "loker-1ccc1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189133644764:android:1b2eb362ada936c26c6519",
+        "android_client_info": {
+          "package_name": "com.cleon.lokerku.awan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEhpLIc8aZMmYqOYEP0NgPDkO7aQkvfls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
